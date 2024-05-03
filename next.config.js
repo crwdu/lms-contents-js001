@@ -7,4 +7,7 @@ const withNextra = require("nextra")({
 
 module.exports = withNextra({
   basePath: `/courses/${COURSE_SLUG}`,
+  env: {
+    CHANNEL_TALK_PLUGIN_KEY: process.env.CHANNEL_TALK_PLUGIN_KEY,
+  },
 });
